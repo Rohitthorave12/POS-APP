@@ -60,11 +60,28 @@ This project is a Point of Sale (POS) application designed to handle customer tr
 3.  **Select a bill to view details:** Click on a specific bill in the list to view its detailed information.
 4.  **Print the invoice for customers using the Print button:** Locate the "Print" button associated with a bill and click it to generate a printable version of the invoice. This functionality is powered by the `react-to-print` library.
 
+
 ## API Endpoints
 
-The backend API provides the following endpoints for interacting with bill data:
+### User Authentication
 
-* **`GET /api/bills/get-bills`**: Fetches all bills stored in the database.
-* **`POST /api/bills/create-bill`**: Adds a new bill to the database. The request body should contain the necessary bill data in JSON format.
-* **`DELETE /api/bills/:id`**: Deletes a specific bill from the database based on its unique ID. Replace `:id` with the actual ID of the bill to be deleted.
+| Method | Endpoint             | Description                 |
+|--------|----------------------|-----------------------------|
+| `POST` | `/api/users/register` | Registers a new user        |
+| `POST` | `/api/users/login`  | Authenticates user login    |
 
+### Item Management
+
+| Method   | Endpoint                | Description                 |
+|----------|-------------------------|-----------------------------|
+| `GET`    | `/api/items/get-item`   | Retrieves all items         |
+| `POST`   | `/api/items/add-item`   | Adds a new item             |
+| `PUT`    | `/api/items/edit-item`  | Edits an existing item      |
+| `DELETE` | `/api/items/delete-item/:itemId` | Deletes an item (by ID)     |
+
+### Billing System
+
+| Method | Endpoint            | Description           |
+|--------|---------------------|-----------------------|
+| `POST` | `/api/bills/add-bills` | Creates a new bill    |
+| `GET`  | `/api/bills/get-bills` | Retrieves all bills   |
