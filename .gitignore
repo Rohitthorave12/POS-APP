@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+client/node_modules/
+
+# Environment variables
+.env
+
+# Build files
+build/
+client/build/
+
+# Lock files
+package-lock.json
+client/package-lock.json
+yarn.lock
+client/yarn.lock
+
+# System files
+.DS_Store
+
+# Debug logs
+npm-debug.log
+client/npm-debug.log

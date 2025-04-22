@@ -1,0 +1,47 @@
+.ant-layout-has-sider{
+    padding: 5px !important; 
+}
+
+.ant-layout-has-sider{
+    height: 100vh;
+}
+
+.ant-layout-sider{
+    padding-top: 10px;
+    border-radius: 10px !important;
+}
+
+.anticon svg{
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.site-layout .site-layout-background {
+    background: #ded4d4 !important;
+    box-shadow: 0 0 3px rgba(170, 166, 166, 0.12) !important;
+    border-radius: 5px;
+    margin: 3px;
+    overflow: auto;
+}
+
+.ant-layout-header{
+    line-height: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.cart-item{
+    padding-left: 20px;
+    padding-right: 30px;
+    cursor: pointer;
+    display: flex;
+}
+.cart-item p{
+    margin-top: 10px;
+    font-weight: bold;
+}
